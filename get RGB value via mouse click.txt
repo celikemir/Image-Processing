@@ -1,0 +1,24 @@
+int R = 1, G = 1, B = 1;
+Int16 Z;
+
+private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                Bitmap bmp = new Bitmap(pictureBox1.Image);
+                Color alýnanrenk = bmp.GetPixel(e.X, e.Y);
+                pictureBox2.BackColor = alýnanrenk;
+
+
+                R = alýnanrenk.R;
+                G = alýnanrenk.G;
+                B = alýnanrenk.B;
+            }
+            catch (Exception ex)
+            {
+
+            }
+private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            Z = (Int16)(trackBar1.Value);
+        }
