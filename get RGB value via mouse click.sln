@@ -6,13 +6,13 @@ private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
             try
             {
                 Bitmap bmp = new Bitmap(pictureBox1.Image);
-                Color alýnanrenk = bmp.GetPixel(e.X, e.Y);
-                pictureBox2.BackColor = alýnanrenk;
+                Color alinanrenk = bmp.GetPixel(e.X, e.Y);
+                pictureBox2.BackColor = alinanrenk;
 
 
-                R = alýnanrenk.R;
-                G = alýnanrenk.G;
-                B = alýnanrenk.B;
+                R = alinanrenk.R;
+                G = alinanrenk.G;
+                B = alinanrenk.B;
             }
             catch (Exception ex)
             {
